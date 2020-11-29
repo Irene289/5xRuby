@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="number"]:invalid{
+            color: red;
+        }
+        label:hover{
+            color: red;
+        }
+        input[name]{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!--第一種label寫法，跟input分開寫，這種要加for & id-->
+    <div>
+        <label for="user_name">姓名</label>  
+        <input type="text" id="user_name" placeholder="請輸入至少兩個字元">
+    </div>
+    
+    <!--第一種label寫法，跟input分開寫，這種要加for & id-->
+    <div>
+        <label for="income">年收入</label>
+        <input type="number" id="income">
+    </div>
+
+    <!--按一下箭頭，會直接跳到18，但輸入數字可以比18小-->
+    <div>
+        <label for="age">年齡</label>
+        <input type="number" min="18" max="99">
+    </div>
+    
+    <!--第一種label寫法，跟input分開寫，這種要加for & id-->
+    <div>
+        <label for="tel">電話</label>
+        <input type="tel" id="tel">
+    </div>
+
+    <!--第二種label寫法，將input包住，這種不用加for-->
+    <div>
+        <label>網址
+            <input type="url">
+        </label>
+    </div>
+
+    <!--點搜尋不會自動出現游標-->
+    <div>
+        搜尋
+        <input type="search"> 
+     </div>
+
+     <!--點搜尋不會自動出現游標-->
+    <div>
+        日期
+        <input type="date">
+    </div>
+
+    <!--點搜尋不會自動出現游標-->
+    <div>
+        時間
+        <input type="time">
+    </div>
+
+    <!--點搜尋不會自動出現游標-->
+    <div>
+        顏色
+        <input type="color">
+    </div>
+
+    <!--點搜尋不會自動出現游標-->
+    <!--range要搭配程式-->
+    <div>
+        範圍
+        <input type="range">
+    </div>
+
+    <div>
+        <label>
+            <input type="checkbox">釣魚
+        </label>
+        <label>
+            <input type="checkbox">上網
+        </label>
+        <label>
+            <input type="checkbox">看電影
+        </label>
+    </div>
+
+    <!--選了就是選了，取消要用程式來做-->
+    <!--注意label包法，一個點文字無效，一個點文字有效-->
+    <div>
+        
+            <input type="radio" name="sex">男
+    
+        <label>    
+            <input type="radio" name="sex">女
+        </label>
+    </div>
+
+    <div>
+        <textarea rows="5"></textarea>
+    </div>
+
+    <!--送資料時，真正是送value裡的值-->
+    <div>
+        <select>
+            <option value="">請選擇</option>
+            <option value="大安區">大安區</option>
+            <option value="300">桃園區</option>
+            <option value="333">龜山區</option>
+        </select>
+    </div>
+
+    <div>
+        <input type="submit" name="xx" value="zz">
+        <input type="reset" name="">
+        <input type="button" name="" value="我是input標籤">
+        <button>我是按鈕標籤</button>
+    </div>
+
+</body>
+</html>

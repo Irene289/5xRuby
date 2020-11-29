@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--第三種寫法-->
+    <style>
+        h1{
+            color: green;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>title</h1>
+
+    <!--第一種寫法，有寫到的可override第二種＆第三種-->
+    <p style="color:red;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, animi!</p>
+    
+    
+
+    <!--第二種寫法，可override第三種-->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, animi!</p>
+
+    <style> 
+        h1{
+            color: black;
+            font-size: 50px;
+            font-style: italic;
+        }
+        
+        p{
+            color: blue;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .p3{
+            color: yellow;
+            font-size: 60px;
+            line-height: 0.5;
+        }
+
+        /*--應是li標籤，而不是ul標籤*/
+        li{
+            color: pink;
+            font-size:18px;
+        }
+
+    </style>
+
+    <p class="p3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, animi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, animi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, animi!</p>
+
+
+    <ul>
+        <li>清單一</li>
+        <li>清單二</li>
+        <li>清單三</li>
+    </ul>
+
+
+</body>
+</html>

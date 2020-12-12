@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            background-color: red;
+            width: 400px;
+            height: 100px;
+            border-radius: 100px;           
+            transition: 0.3s;
+            /*box-shadow: X Y 模糊 擴張 色彩 內部;*/
+            box-shadow: 5px 5px 10px 0px maroon;
+            position: relative;
+            top: -10px;
+        }
+
+        .circle:hover{
+            background-color: pink;
+            box-shadow: 0px 0px 0px 0px maroon;
+            top: 0px;
+        }
+        ul{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</body>
+</html>

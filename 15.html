@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .papa{
+            width: 600px;
+            height: 300px;
+            background-color: grey;
+            margin: 10px;
+            display: flex;
+        }
+        .child_text{
+            width: 200px;
+            padding: 10px;
+        }
+       
+        .papa:nth-child(even){
+            flex-direction: row-reverse;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="papa">
+        <div class="child_pic">
+            <img src="https://picsum.photos/400/300/?random=1">
+        </div>
+        <div class="child_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae exercitationem, quod illum deleniti neque possimus, dignissimos ipsum vero molestias provident iste eius odit, repellat itaque. Amet ratione deleniti minus sequi!</div>
+    </div>
+
+    <div class="papa">
+        <div class="child_pic">
+            <img src="https://picsum.photos/400/300/?random=2">
+        </div>
+        <div class="child_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque esse quia a voluptas quis consequatur et magni perspiciatis dolore consectetur eos sunt minus obcaecati nostrum, sint amet sequi. Tempore!</div>
+    </div>
+</body>
+</html>

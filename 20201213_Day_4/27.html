@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 300px;
+        height: 300px;
+        background-color: red;
+    }
+    /*     
+    @media 裝置 and (條件一) and (條件二){
+        要執行的CSS
+    } */
+
+    /* 斷點（break-point）設定 */
+    /* 大於等於 768px，會變成藍色 */
+    /* iPad 直向或更高解析度
+       當裝置寬度大於等於 768px 時，符合條件
+       平板以上裝置通通套用 */
+    @media screen and (min-width: 768px){
+        .box{
+            background-color: orange;
+        }
+    }
+
+    /* iPad 橫向或更高解析度
+       當裝置寬度大於等於 992px 時，符合條件
+       平板橫向以上裝置通通套用 */
+    @media screen and (min-width: 992px){
+        .box{
+            background-color: yellow;
+        }
+    }
+
+    /* 桌機 
+       優先權觀念：前面每個都會執行，但後面覆寫前面*/
+    @media screen and (min-width: 1200px){
+        .box{
+            background-color: green;
+        }
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>

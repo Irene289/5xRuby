@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .wrap{
+            width: 100%;
+            background-color: lightgrey;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item{
+            /* 手機單欄 */
+            width: 97%;
+            height: 200px;
+            /*margin: 15px;*/
+            margin: 1.5%;
+            background-color: grey;
+        }
+
+        /* 平板直向雙欄 */
+        @media screen and (min-width: 768px) {
+            .item{
+                width: 47%;
+                /* margin: 1.5%; 不用重複寫 */
+            }
+        }
+
+        /* 平板橫向三欄 */
+        @media screen and (min-width: 992px) {
+            .item{
+                width: 30.3333%;
+                /* margin: 1.5%; 不用重複寫 */
+            }
+        }
+
+        /* 桌機四欄 */
+        @media screen and (min-width: 1200px) {
+            .item{
+                width: 22%;
+                /* margin: 1.5%; 不用重複寫 */
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="wrap">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+</body>
+</html>

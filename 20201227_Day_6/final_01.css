@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.col-1{ width: 8.333333%; }
+.col-2{ width: 16.666667%; }
+.col-3{ width: 25%; }
+.col-4{ width: 33.333333%; }
+.col-5{ width: 41.666667%; }
+.col-6{ width: 50%; }
+.col-7{ width: 58.333333%; }
+.col-8{ width: 66.666667%; }
+.col-9{ width: 75%; }
+.col-10{ width: 83.333333%; }
+.col-11{ width: 91.666667%; }
+.col-12{ width: 100%; }
+
+@media screen and (min-width: 768px){  
+    .col-md-1{ width: 8.333333%; }
+    .col-md-2{ width: 16.666667%; }
+    .col-md-3{ width: 25%; }
+    .col-md-4{ width: 33.333333%; }
+    .col-md-5{ width: 41.666667%; }
+    .col-md-6{ width: 50%; }
+    .col-md-7{ width: 58.333333%; }
+    .col-md-8{ width: 66.666667%; }
+    .col-md-9{ width: 75%; }
+    .col-md-10{ width: 83.333333%; }
+    .col-md-11{ width: 91.666667%; }
+    .col-md-12{ width: 100%; }
+}
+
+@media screen and (min-width: 992px){  
+    .col-lg-1{ width: 8.333333%; }
+    .col-lg-2{ width: 16.666667%; }
+    .col-lg-3{ width: 25%; }
+    .col-lg-4{ width: 33.333333%; }
+    .col-lg-5{ width: 41.666667%; }
+    .col-lg-6{ width: 50%; }
+    .col-lg-7{ width: 58.333333%; }
+    .col-lg-8{ width: 66.666667%; }
+    .col-lg-9{ width: 75%; }
+    .col-lg-10{ width: 83.333333%; }
+    .col-lg-11{ width: 91.666667%; }
+    .col-lg-12{ width: 100%; }
+}
+
+@media screen and (min-width: 1200px){  
+    .col-xl-1{ width: 8.333333%; }
+    .col-xl-2{ width: 16.666667%; }
+    .col-xl-3{ width: 25%; }
+    .col-xl-4{ width: 33.333333%; }
+    .col-xl-5{ width: 41.666667%; }
+    .col-xl-6{ width: 50%; }
+    .col-xl-7{ width: 58.333333%; }
+    .col-xl-8{ width: 66.666667%; }
+    .col-xl-9{ width: 75%; }
+    .col-xl-10{ width: 83.333333%; }
+    .col-xl-11{ width: 91.666667%; }
+    .col-xl-12{ width: 100%; }
+}
+
+a{
+    text-decoration: none;
+}
+.wrap{
+    width: 100%;
+}
+.container-fluid{
+    height: 400px;
+    background-image: url("https://picsum.photos/2000/400/?blur");
+}
+.logo{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 69, 0);
+    padding: 20px 0px 0px 50px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h1{
+    font-size: 48px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.p1{
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+}
+.tab-pane{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.menu{ 
+    width: 322px;
+    height: 510px;
+    border: 1px solid rgb(169, 169, 169, .7);
+    border-radius: 2%;
+    padding: 10px;
+    box-sizing: border;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    position: relative;
+    text-align: center;
+}
+.tag{
+    width: 50px;
+    background-color: rgb(255, 69, 0, .95);
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: -1px;
+    left: -8px;
+    z-index: 1;
+}
+.menu-pic{
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+.menu-pic.active{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    background-color: rgba(0,0,0,.7);
+    justify-content: center;
+    align-items: center; 
+    z-index: 2;
+}
+img{  
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+h3{
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+}   
+.menu-btn{
+    display: inline-block;
+    padding: 5px 80px;
+    margin-top: 5px;
+    background-color: rgb(255, 69, 0, .95);
+    color: #ffffff;
+    font-size: 16px;
+}
+.footer{
+    height: 30px;
+    display: block;
+    margin-top: 68vh;
+    background-color: rgb(224, 224, 224, .5);
+    color: grey;
+    text-align: right;
+    line-height: 30px;
+    padding: 0 20px;
+}

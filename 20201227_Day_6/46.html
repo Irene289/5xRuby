@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 0;
+            border: none;
+            background-color: transparnt;
+        }
+        
+        button span{
+            display: block;
+            padding: 20px 30px;
+            background-color: #94c58D;
+            border: none;
+            box-shadow: 0px 6px #84a588;
+            transition: .3s;
+            position: relative;
+            bottom: 0;
+        }
+        
+        /* 原本寫法會在滑鼠靠近按鈕上端讓按鈕一直抖動，很不好的寫法 */
+        button:hover span{
+            box-shadow: 0px 0px #84a588;
+            bottom: -6px;
+        }
+
+    </style>
+</head>
+<body>
+    <button> 
+        <span>Click Me</span>
+    </button>
+</body>
+</html>

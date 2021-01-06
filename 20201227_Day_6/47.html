@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: #f00;
+        position: relative;
+
+        /* 誰要動畫 */
+        animation-name: run;
+        /* 執行時間 */
+        animation-duration: 2s;
+        /* 執行幾次 */
+        animation-iteration-count: 3;
+    }
+    
+    @keyframes run {
+          0%{ left: 0; top: 0; }
+         25%{ left: 200px; top: 0; }
+         50%{ left: 200px; top: 200px; }
+         75%{ left: 0; top: 200px; }
+        100%{ left: 0; top: 0; }
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>

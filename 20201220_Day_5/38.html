@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .controller{
+            display: block;
+            width: 300px;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .text{
+            width: 300px;
+            padding: 10px;
+            background-color: #ffa;
+        }
+        .text.x{
+            display: none;        
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="controller controller1">OPEN/CLOSE</a>
+    <div class="text text1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sequi repellat cupiditate. Voluptatibus molestias quae, expedita nisi, nostrum numquam eaque totam illo ut magnam labore quis placeat est nihil eligendi.
+    </div>
+    <a href="#" class="controller controller2">OPEN/CLOSE</a>
+    <div class="text text2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sequi repellat cupiditate. Voluptatibus molestias quae, expedita nisi, nostrum numquam eaque totam illo ut magnam labore quis placeat est nihil eligendi.
+    </div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+// 不要動到上面
+    $(".controller1").click(function(){
+        $(".text1").toggleClass("x")
+    });
+    $(".controller2").click(function(){
+        $(".text2").toggleClass("x")
+    })
+// 不要動到下面
+})
+</script>
+</body>
+</html>

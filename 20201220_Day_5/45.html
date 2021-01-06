@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- ＡＯＳ 貼在自己寫的上面 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main-nav{
+            width: 30px;
+            height: 150px;
+            background-color: #fa0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+        }
+        .main-nav a{
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            text-decoration: none;
+        }
+        .main-nav a.active{
+            background-color: #f00;
+        }
+        /* .tab{
+            display: inline-block;
+            padding: 10px;
+        }
+        .tab.active{
+            background-color: red;           
+        } */
+        .box-A,.box-B,.box-C,.box-D{
+            width: 100%;
+            height: 100vh;
+            font-size: 200px;
+        }
+        .box-A{background-color: #fcc; line-height: 700px;}
+        .box-B{background-color: #cfc; line-height: 700px;}
+        .box-C{background-color: #ccf; line-height: 700px;}
+        .box-D{background-color: #ccc; line-height: 700px;}
+        .backToTop{
+            width: 50px;
+            height: 50px;
+            background-color: grey;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
+
+            color: white;
+            font-size: 20px;
+        }
+        a .backToTop{
+
+            color: white;
+            font-size: 20px;
+        }
+        .backToTop.show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-A" id="box-id-a">A</div>
+    <div class="box-B" data-aos="fade-up" data-aos-duration="9000" id="box-id-b">B</div>
+    <div class="box-C" id="box-id-c">C</div>
+    <div class="box-D" id="box-id-d">D</div>
+
+    <nav class="main-nav">
+        <!--錨點連結-->
+        <a href="#box-id-a">A</a>
+        <a href="#box-id-b">B</a>
+        <a href="#box-id-c">C</a>
+        <a href="#box-id-d">D</a>
+    </nav>
+
+<!-- ＡＯＳ套件，貼在這裡 -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // AOS 套件，貼在這裡
+     AOS.init();   
+</script>
+
+</body>
+</html>

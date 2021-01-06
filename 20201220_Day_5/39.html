@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 10px 30px;
+            border: none;
+            background-color: #faa;
+            margin: 10px;
+        }
+        .box-a,.box-b{
+            background-color: #aaf;
+            display: none;
+        }
+   </style>
+</head>
+<body>
+
+    <button class="btn-a">A. OPEN</button>
+    <button class="btn-b">B. CLOSE</button>
+    <div class="box-a">BOX-A. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis porro necessitatibus iure, minima placeat laudantium veritatis pariatur quisquam aliquam reprehenderit voluptatibus. Quos numquam quod totam! Neque cupiditate aliquam eaque praesentium!</div>
+    <div class="box-b">BOX-B. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis porro necessitatibus iure, minima placeat laudantium veritatis pariatur quisquam aliquam reprehenderit voluptatibus. Quos numquam quod totam! Neque cupiditate aliquam eaque praesentium!</div>
+
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script>
+    // $(document).ready(
+        // function(){
+            // 這是我要執行的內容
+            // 物件.要執行的命令
+            // 物件.要執行的屬性
+            // $("div").addClass("x");
+            // $("div").removeClass("wait-remove");
+        // }
+    // )
+    
+    // 上下的作用是一樣的
+
+    $(function(){
+        // $(".close-btn").click(
+        //     function(){
+        //         $(".box").hide();
+        //     }
+        // )
+
+        // $(".open-btn").click(
+        //     function(){
+        //         $(".box").show();
+        //     }
+        // )
+        $(".btn-a").click(
+            function(){
+                $(".box-a").toggle();
+                $(".box-b").hide();
+            }
+        )
+
+        $(".btn-b").click(
+            function(){
+                $(".box-b").fadeToggle();
+                $(".box-a").hide();
+            }
+        )
+    })
+
+</script>
+
+</body>
+</html>

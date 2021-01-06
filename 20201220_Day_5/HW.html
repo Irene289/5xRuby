@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .item{
+            width: 40%;
+            height: 500px;
+            box-sizing: border-box;
+            background-color: #fff;
+            border: 1px solid lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 用 nthchild 選取器 -->
+        <div class="item">TEST_1</div>
+        <div class="item">TEST_2</div>
+        <div class="item">TEST_3</div>
+        <div class="item">TEST_4</div>
+        <div class="item">TEST_5</div>
+        <div class="item">TEST_6</div>
+        <div class="item">TEST_7</div>
+        <div class="item">TEST_8</div>
+        <div class="item">TEST_9</div>
+        <div class="item">TEST_10</div>
+    </div>
+
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script>
+    // $(document).ready(
+        // function(){
+            // 這是我要執行的內容
+            // 物件.要執行的命令
+            // 物件.要執行的屬性
+            // $("div").addClass("x");
+            // $("div").removeClass("wait-remove");
+        // }
+    // )
+    
+    // 上下的作用是一樣的
+
+    $(function(){
+        
+        $(".item1").click(
+            function(){
+                $(".item2").hide();
+                $(".item3").show();
+            }
+        )
+        $(".item2").click(
+            function(){
+                $(".item1").hide();
+                $(".item3").show();
+            }
+        )
+
+    })
+
+</script>
+
+</body>
+</html>

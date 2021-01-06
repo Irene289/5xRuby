@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        .show_lightbox{
+            position: absolute;
+            z-index: 1;
+        }
+        .lightbox{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background-color: rgba(0,0,0,.5);
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+        .lightbox.active{
+            display: flex;
+        }
+        .content{
+            position: relative;
+        }
+        .btn-close{
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            text-decoration: none;
+            border: 1px solid blue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="show_lightbox">顯示/關閉廣告</button>
+    <div class="lightbox">
+        
+        <div class="content">
+            <img src="https://picsum.photos/300/200/?random=1">
+            <a href="#" class="btn-close">X</a>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function(){
+            // $(".btn-close").click(
+            //     function(){
+            //         $(".lightbox").toggle();
+            //     }
+            // )
+            // $(".show_lightbox").click(
+            //     function(){
+            //         $(".lightbox").show();
+            //     }
+            // )
+
+            $(".show_lightbox, .lightbox .btn-close").click(
+                function(){
+                    $(".lightbox").toggleClass("active");
+                }
+            )
+
+                console.log( $(".btn-close").offset().top );
+
+        })
+    </script>
+</body>
+</html>

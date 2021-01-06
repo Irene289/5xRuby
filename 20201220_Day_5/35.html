@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-a{
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            background-color: #faa;  
+        }
+        .box-b{
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            background-color: #aaf;            
+        }
+        .product-title{
+            background-color: #000;
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+        }
+        .content{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-a">box-a</div>
+    <div class="box-b">box-b</div>
+    <div class="product-title">產品介紹</div>
+    <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos, animi laudantium tempora magni modi nobis quas. Dolores aut, culpa molestias nesciunt, odit minus reiciendis quo dicta dolor amet at.</div>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    //...做事的位置
+    // ＄("CSS選取器")
+    $(".box-a").click(function(){
+        // $(".box-b").hide(); 點滑鼠藏起來，不會再打開
+        $(".box-b").toggle();        
+    })
+    $(".product-title").dblclick(function(){
+        $(".content").toggle();
+    })
+})   
+</script>
+</body>
+</html>
